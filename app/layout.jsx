@@ -1,13 +1,24 @@
 import '@styles/globals.css';
+import { Children } from 'react';
 
 export const metadata = {
     titele: "Promptopia",
     description: 'Discover & Share AI Prompts'
 }
 
-const layout = () => {
+const RootLayout = ({children}) => {
   return (
-    <div>layout</div>
+    <html lang="en">
+      <body>
+        <div className='main'>
+          <div className='gradient'></div>
+        </div>
+
+        <main className='app'>
+          {children}
+        </main>
+      </body>
+    </html>
   )
 }
-export default layout
+export default RootLayout;
