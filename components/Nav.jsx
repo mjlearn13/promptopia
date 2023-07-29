@@ -33,7 +33,7 @@ const Nav = () => {
           className="object-contain"
           src="/assets/images/logo.svg"
         />
-        <p className="logo-text">Promptopia</p>
+        <p className="logo_text">Promptopia</p>
       </Link>
 
       {/* Desktop Navigation */}
